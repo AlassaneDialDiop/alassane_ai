@@ -53,28 +53,35 @@ title: Home
   </div>
   
   <div class="callout brown-bg">
-    <h1>Services</h1>
+    <h2>I worked with special people</h2>
     
-    <h2><strong>AI Solutions Development</strong></h2>
-    <ul>
-      <li>Custom ChatGPT applications and conversational AI</li>
-      <li>Recommendation systems and personalization engines</li>
-      <li>Predictive analytics and machine learning models</li>
-    </ul>
+    <div class="testimonial-content">
+      <div class="testimonial-logo">
+        <img src="{{ '/assets/tastet-logo.png' | relative_url }}" alt="Tastet" class="tastet-logo">
+      </div>
+      <div class="testimonial-text">
+        <p><strong>Context</strong></p>
+        <p>Elevating a culinary platform with AI-driven recommendations<br>
+        I collaborated with Tastet, a local gourmet guide focusing on equity, diversity, and personalization.<br>
+        Together, we worked on creating an innovative approach to culinary exploration.</p>
+        
+        <p><strong>Outcome</strong></p>
+        <p>In our collaboration, we designed a comprehensive tech stack, orchestrating a seamless end-to-end pipeline for AI-driven recommendations. From data collection in a Google Storage bucket to a Docker container hosting a real-time recommendation API, every step was meticulously crafted for optimal performance.</p>
+        
+        <div class="callout-cta purple-bg">
+          <span class="emoji">👉</span>
+          <a href="{{ '/testimonials/' | relative_url }}">Learn more about the Tastet Project</a>
+        </div>
+      </div>
+    </div>
     
-    <h2><strong>Data Analytics & Insights</strong></h2>
-    <ul>
-      <li>Advanced data analysis and visualization</li>
-      <li>Customer behavior analytics and segmentation</li>
-      <li>Performance metrics and KPI dashboards</li>
-    </ul>
-    
-    <h2><strong>Strategic Consulting</strong></h2>
-    <ul>
-      <li>AI strategy and implementation roadmaps</li>
-      <li>Data-driven decision making frameworks</li>
-      <li>Marketing analytics optimization</li>
-    </ul>
+    <div class="testimonial-quote">
+      <blockquote>
+        <p>"Working with Alassane was a transformative experience. His expertise in AI & Data science seamlessly merged with our passion for the product we design. Alassane is a valuable collaborator, bringing innovation and dedication to every project.<br>
+        What I value the most about working with Alassane is his exceptional reliability and professionalism. His methodical approach to problem-solving has consistently proven to be a perfect match for our company."</p>
+        <cite>— Elise Tastet, Founder & CEO of Tastet.ca</cite>
+      </blockquote>
+    </div>
   </div>
 </div>
 
