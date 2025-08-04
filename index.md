@@ -13,13 +13,7 @@ title: Home
     <h1>Hi, I'm Alassane</h1>
     <h3>Data scientist<br>specializing in delivering AI and analytics-driven solutions</h3>
     <p>My expertise lies in leveraging the power of AI and advanced analysis techniques to develop applications that enhance user experiences and operational efficiency.</p>
-    <p>I am driven by the challenge of transforming complex data into actionable insights that propel business growth and customer satisfaction.</p>
-    <p>From streamlining e-commerce through AI-powered quality assurance tools<br>
-    to fostering culinary discovery with personalized recommendation systems,<br>
-    my work encapsulates a commitment to innovation and precision.</p>
-    <p>Join me in leveraging cutting-edge technology to uncover opportunities, optimize your AI applications, and tell compelling stories with data.<br>
-    Let's collaborate to ensure that your data isn't just big, but profoundly insightful and strategically impactful.</p>
-  </div>
+    <p>I am driven by the challenge of transforming complex data into actionable insights that propel business growth and customer/user satisfaction.</p>
   </div>
 </div>
 
@@ -108,14 +102,13 @@ title: Home
       <span class="contact-emoji">📧</span>
       <div class="contact-details">
         <p><strong>Contact</strong><br>
-        <a href="mailto:alassane@aidotai.com">alassane@aidotai.com</a><br>
-        alt.: alassanedialdiop@gmail.com</p>
+        <a href="mailto:alassanedialdiop@gmail.com">alassanedialdiop@gmail.com</a><br>
       </div>
     </div>
     
     <div class="button-group">
-      <a href="https://www.linkedin.com/in/alassane-diop/" class="button" target="_blank">LinkedIn</a>
-      <a href="{{ '/resume/' | relative_url }}" class="button">Resume</a>
+      <a href="https://www.linkedin.com/in/alassanediop/" class="button" target="_blank">LinkedIn</a>
+      <a href="https://drive.google.com/file/d/1A0rvPokKQF2VRhOnQkFvyS-v23pvgxYv/view?usp=sharing" class="button" target="_blank">Resume</a>
     </div>
     
     <div class="calendly-wrapper">
