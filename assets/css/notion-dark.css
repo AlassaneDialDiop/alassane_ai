@@ -47,15 +47,21 @@ body .nav-links a:hover {
     color: rgba(255, 255, 255, 0.9);
 }
 
+/* Hero Wrapper */
+.hero-wrapper {
+    background: rgb(25, 25, 25);
+    margin: 0;
+    padding: 0;
+}
+
 /* Hero Section */
 .hero-section {
     display: flex;
-    max-width: 100%;
-    margin: 0;
-    padding: 80px 15% 60px;
+    max-width: 900px;
+    width: 100%;
+    padding: 80px 20px 60px;
     gap: 60px;
     align-items: flex-start;
-    background: rgb(25, 25, 25);
 }
 
 .hero-left {
@@ -111,6 +117,8 @@ body .nav-links a:hover {
 .full-width-section {
     width: 100%;
     padding: 60px 15%;
+    display: flex;
+    justify-content: center;
 }
 
 /* Expertise Section */
@@ -120,6 +128,7 @@ body .nav-links a:hover {
 
 .expertise-section {
     max-width: 900px;
+    width: 100%;
 }
 
 .expertise-section h1 {
@@ -196,6 +205,7 @@ body .nav-links a:hover {
 
 .special-people-section {
     max-width: 900px;
+    width: 100%;
 }
 
 .special-people-section h2 {
@@ -281,6 +291,7 @@ body .nav-links a:hover {
 
 .how-i-work-section {
     max-width: 900px;
+    width: 100%;
 }
 
 .section-title {
@@ -320,10 +331,14 @@ body .nav-links a:hover {
 .contact-wrapper {
     background: rgb(25, 25, 25);
     padding: 60px 15% 40px;
+    display: flex;
+    justify-content: center;
 }
 
 .contact-section {
     max-width: 900px;
+    width: 100%;
+    margin: 0 auto;
 }
 
 .contact-info {

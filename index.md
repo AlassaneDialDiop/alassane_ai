@@ -3,7 +3,8 @@ layout: default
 title: Home
 ---
 
-<div class="hero-section">
+<div class="full-width-section hero-wrapper">
+  <div class="hero-section">
   <div class="hero-left">
     <img src="{{ '/assets/alassane-portrait.png' | relative_url }}" alt="Alassane" class="hero-portrait">
   </div>
@@ -18,6 +19,7 @@ title: Home
     my work encapsulates a commitment to innovation and precision.</p>
     <p>Join me in leveraging cutting-edge technology to uncover opportunities, optimize your AI applications, and tell compelling stories with data.<br>
     Let's collaborate to ensure that your data isn't just big, but profoundly insightful and strategically impactful.</p>
+  </div>
   </div>
 </div>
 
