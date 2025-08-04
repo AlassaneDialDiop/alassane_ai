@@ -11,6 +11,9 @@
     
     <!-- Styles -->
     <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+    {% if page.url == "/" %}
+    <link rel="stylesheet" href="{{ '/assets/css/notion-style.css' | relative_url }}">
+    {% endif %}
     
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
