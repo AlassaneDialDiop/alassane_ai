@@ -14,25 +14,33 @@ body {
     background: rgb(25, 25, 25);
 }
 
-/* Override default styles */
+/* Override default styles completely for homepage */
 body .container {
-    max-width: 100%;
-    padding: 0;
+    max-width: 100% !important;
+    padding: 0 !important;
     background: rgb(25, 25, 25);
+    margin: 0 !important;
+    min-height: auto !important;
+    display: block !important;
 }
 
 body .main-content {
-    margin-bottom: 0;
+    margin-bottom: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
 }
 
 /* Navigation Override */
 body .navigation {
-    max-width: 100%;
-    margin: 0;
-    padding: 20px 40px;
-    background: rgb(25, 25, 25);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-    margin-bottom: 0;
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 20px 40px !important;
+    background: rgb(25, 25, 25) !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
+    margin-bottom: 0 !important;
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
 }
 
 body .nav-logo {
@@ -115,10 +123,14 @@ body .nav-links a:hover {
 
 /* Full-width sections */
 .full-width-section {
-    width: 100%;
-    padding: 60px 15%;
-    display: flex;
-    justify-content: center;
+    width: 100% !important;
+    padding: 60px 15% !important;
+    display: flex !important;
+    justify-content: center !important;
+    margin: 0 !important;
+    box-sizing: border-box !important;
+    clear: both !important;
+    float: none !important;
 }
 
 /* Expertise Section */
@@ -329,10 +341,13 @@ body .nav-links a:hover {
 
 /* Contact Section */
 .contact-wrapper {
-    background: rgb(25, 25, 25);
-    padding: 60px 15% 40px;
-    display: flex;
-    justify-content: center;
+    background: rgb(25, 25, 25) !important;
+    padding: 60px 15% 40px !important;
+    display: flex !important;
+    justify-content: center !important;
+    width: 100% !important;
+    margin: 0 !important;
+    box-sizing: border-box !important;
 }
 
 .contact-section {
@@ -402,11 +417,14 @@ body .nav-links a:hover {
 
 /* Footer Override */
 body .footer {
-    background: rgb(25, 25, 25);
-    color: rgba(255, 255, 255, 0.5);
-    padding: 40px 15%;
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
-    text-align: left;
+    background: rgb(25, 25, 25) !important;
+    color: rgba(255, 255, 255, 0.5) !important;
+    padding: 40px 15% !important;
+    border-top: 1px solid rgba(255, 255, 255, 0.1) !important;
+    text-align: left !important;
+    width: 100% !important;
+    margin: 0 !important;
+    max-width: none !important;
 }
 
 /* Emoji styling */
