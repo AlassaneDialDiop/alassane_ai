@@ -1,0 +1,114 @@
+---
+layout: default
+---
+
+<div class="project-page">
+    <header class="project-header">
+        <h1>{{ page.title }}</h1>
+        {% if page.subtitle %}
+        <p class="project-subtitle">{{ page.subtitle }}</p>
+        {% endif %}
+        
+        <div class="project-meta">
+            {% if page.technologies %}
+            <div class="technologies">
+                <strong>Technologies:</strong>
+                {% for tech in page.technologies %}
+                <span class="tech-tag">{{ tech }}</span>
+                {% endfor %}
+            </div>
+            {% endif %}
+            
+            {% if page.date %}
+            <div class="project-date">
+                <strong>Completed:</strong> {{ page.date | date: "%B %Y" }}
+            </div>
+            {% endif %}
+        </div>
+    </header>
+    
+    <div class="project-content">
+        {{ content }}
+    </div>
+    
+    <div class="project-navigation">
+        <a href="{{ '/projects/' | relative_url }}" class="back-link">← Back to All Projects</a>
+    </div>
+</div>
+
+<style>
+.project-page {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+}
+
+.project-header {
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.project-header h1 {
+    margin-bottom: 1rem;
+}
+
+.project-subtitle {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 2rem;
+}
+
+.project-meta {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+}
+
+.technologies {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.tech-tag {
+    background: #f0f0f0;
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+}
+
+.project-content {
+    margin-bottom: 3rem;
+}
+
+.project-content h2 {
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.project-content h3 {
+    margin-top: 2rem;
+    margin-bottom: 0.75rem;
+}
+
+.project-navigation {
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid #eee;
+}
+
+.back-link {
+    color: #333;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.back-link:hover {
+    text-decoration: underline;
+}
+</style>

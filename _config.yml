@@ -1,8 +1,9 @@
 # Site settings
 title: Alassane.co
-email: your-email@example.com
+email: alassanedialdiop@gmail.com
 description: >- 
-  Personal website of Alassane Diop
+  Alassane Diop - Data Scientist & AI Consultant specializing in machine learning, 
+  recommendation systems, and predictive analytics. Based in Montreal, Quebec.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://alassane.ai" # your custom domain
 
@@ -40,6 +41,9 @@ collections:
   pages:
     output: true
     permalink: /:name/
+  projects:
+    output: true
+    permalink: /projects/:name/
 
 # Defaults
 defaults:
@@ -53,3 +57,8 @@ defaults:
       type: "posts"
     values:
       layout: "post"
+  - scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: "project"
