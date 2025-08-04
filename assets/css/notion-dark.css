@@ -1,0 +1,450 @@
+/* Notion Dark Theme CSS */
+
+/* Reset and Base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+    color: rgba(255, 255, 255, 0.9);
+    line-height: 1.5;
+    background: rgb(25, 25, 25);
+}
+
+/* Override default styles */
+body .container {
+    max-width: 100%;
+    padding: 0;
+    background: rgb(25, 25, 25);
+}
+
+body .main-content {
+    margin-bottom: 0;
+}
+
+/* Navigation Override */
+body .navigation {
+    max-width: 100%;
+    margin: 0;
+    padding: 20px 40px;
+    background: rgb(25, 25, 25);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    margin-bottom: 0;
+}
+
+body .nav-logo {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+body .nav-links a {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+body .nav-links a:hover {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+/* Hero Section */
+.hero-section {
+    display: flex;
+    max-width: 100%;
+    margin: 0;
+    padding: 80px 15% 60px;
+    gap: 60px;
+    align-items: flex-start;
+    background: rgb(25, 25, 25);
+}
+
+.hero-left {
+    flex: 0 0 200px;
+}
+
+.hero-right {
+    flex: 1;
+    max-width: 700px;
+}
+
+.hero-portrait {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.hero-emoji-placeholder {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 20px;
+    background-image: url('../transparent.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    filter: invert(1);
+}
+
+.hero-right h1 {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    color: rgba(255, 255, 255, 0.9);
+    letter-spacing: -0.02em;
+}
+
+.hero-right h3 {
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 1.4;
+    margin-bottom: 24px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.hero-right p {
+    font-size: 17px;
+    line-height: 1.6;
+    margin-bottom: 16px;
+    color: rgba(255, 255, 255, 0.65);
+}
+
+/* Full-width sections */
+.full-width-section {
+    width: 100%;
+    padding: 60px 15%;
+}
+
+/* Expertise Section */
+.expertise-wrapper {
+    background: rgb(68, 42, 30);
+}
+
+.expertise-section {
+    max-width: 900px;
+}
+
+.expertise-section h1 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 40px;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.expertise-section h2 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 32px;
+    margin-bottom: 16px;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.expertise-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 24px 0;
+}
+
+.expertise-section li {
+    position: relative;
+    padding-left: 24px;
+    margin-bottom: 12px;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 16px;
+}
+
+.expertise-section li:before {
+    content: "•";
+    position: absolute;
+    left: 8px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.expertise-section p {
+    margin-bottom: 12px;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 16px;
+}
+
+/* CTA Button */
+.callout-cta {
+    margin-top: 32px;
+    padding: 12px 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 6px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    transition: background 0.2s;
+}
+
+.callout-cta:hover {
+    background: rgba(255, 255, 255, 0.15);
+}
+
+.callout-cta a {
+    color: rgba(255, 255, 255, 0.9);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+/* Special People Section */
+.special-people-wrapper {
+    background: rgb(47, 46, 46);
+}
+
+.special-people-section {
+    max-width: 900px;
+}
+
+.special-people-section h2 {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 40px;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+/* Testimonial with image */
+.testimonial-with-image {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+    margin-bottom: 40px;
+}
+
+.testimonial-image {
+    flex: 0 0 150px;
+}
+
+.testimonial-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+
+.testimonial-content {
+    flex: 1;
+}
+
+.testimonial-quote {
+    background: transparent;
+    padding: 0;
+    margin: 0;
+}
+
+.testimonial-quote blockquote {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+.testimonial-quote p {
+    font-size: 17px;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 16px;
+    font-style: normal;
+}
+
+.testimonial-quote cite {
+    display: block;
+    font-style: normal;
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.5);
+    margin-top: 16px;
+}
+
+/* Project details */
+.project-details {
+    margin-top: 40px;
+}
+
+.project-details h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.project-details p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 24px;
+}
+
+/* How I Work Section */
+.how-i-work-wrapper {
+    background: rgb(25, 25, 25);
+}
+
+.how-i-work-section {
+    max-width: 900px;
+}
+
+.section-title {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 32px;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.how-i-work {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.how-i-work li {
+    position: relative;
+    padding-left: 24px;
+    margin-bottom: 20px;
+    line-height: 1.6;
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.how-i-work li:before {
+    content: "•";
+    position: absolute;
+    left: 8px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.how-i-work li strong {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+/* Contact Section */
+.contact-wrapper {
+    background: rgb(25, 25, 25);
+    padding: 60px 15% 40px;
+}
+
+.contact-section {
+    max-width: 900px;
+}
+
+.contact-info {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    margin-bottom: 40px;
+}
+
+.contact-emoji {
+    font-size: 24px;
+    flex-shrink: 0;
+}
+
+.contact-details p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.contact-details a {
+    color: rgba(255, 255, 255, 0.9);
+    text-decoration: none;
+}
+
+.contact-details a:hover {
+    text-decoration: underline;
+}
+
+/* Buttons */
+.button-group {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.button {
+    padding: 12px 24px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 6px;
+    color: rgba(255, 255, 255, 0.9);
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.2s;
+    display: inline-block;
+}
+
+.button:hover {
+    background: rgba(255, 255, 255, 0.15);
+    border-color: rgba(255, 255, 255, 0.3);
+}
+
+/* Calendly embed */
+.calendly-wrapper {
+    background: white;
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+/* Footer Override */
+body .footer {
+    background: rgb(25, 25, 25);
+    color: rgba(255, 255, 255, 0.5);
+    padding: 40px 15%;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    text-align: left;
+}
+
+/* Emoji styling */
+.emoji {
+    font-size: 20px;
+    margin-right: 8px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hero-section {
+        flex-direction: column;
+        padding: 60px 20px 40px;
+        gap: 40px;
+    }
+    
+    .hero-left {
+        flex: none;
+        width: 150px;
+    }
+    
+    .full-width-section {
+        padding: 40px 20px;
+    }
+    
+    .contact-wrapper {
+        padding: 40px 20px;
+    }
+    
+    body .footer {
+        padding: 30px 20px;
+    }
+    
+    .testimonial-with-image {
+        flex-direction: column;
+        gap: 24px;
+    }
+    
+    .testimonial-image {
+        flex: none;
+        width: 120px;
+    }
+    
+    body .navigation {
+        padding: 16px 20px;
+    }
+    
+    .button-group {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .button {
+        width: auto;
+    }
+}
