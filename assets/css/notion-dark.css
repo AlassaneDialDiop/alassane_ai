@@ -239,7 +239,8 @@ body .nav-links a:hover {
     flex: 0 0 150px;
 }
 
-.testimonial-image img {
+.testimonial-image img,
+.profile-image {
     width: 100%;
     height: auto;
     border-radius: 50%;
