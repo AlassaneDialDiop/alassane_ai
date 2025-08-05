@@ -135,7 +135,7 @@ body .nav-links a:hover {
 
 /* Expertise Section */
 .expertise-wrapper {
-    background: rgb(68, 42, 30);
+    background: rgb(33, 33, 33);
 }
 
 .expertise-section {
@@ -212,7 +212,7 @@ body .nav-links a:hover {
 
 /* Special People Section */
 .special-people-wrapper {
-    background: rgb(47, 46, 46);
+    background: rgb(44, 46, 46);
 }
 
 .special-people-section {
@@ -242,11 +242,19 @@ body .nav-links a:hover {
     flex-shrink: 0;
 }
 
+.testimonial-image {
+    display: block !important;
+    width: 150px !important;
+    height: 150px !important;
+}
+
 .testimonial-image img,
 .profile-image {
-    width: 100%;
-    height: auto;
-    border-radius: 50%;
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    border-radius: 50% !important;
+    display: block !important;
 }
 
 .testimonial-content {
@@ -311,6 +319,11 @@ body .nav-links a:hover {
     width: 100%;
     margin: 0 auto;
     padding: 0 20px;
+}
+
+/* Override main.css img styles for testimonials */
+.testimonials-section img {
+    max-width: none !important;
 }
 
 .testimonials-section h1 {
@@ -571,7 +584,7 @@ body .footer {
 }
 
 .intro-quote {
-    background: rgba(255, 255, 255, 0.05);
+    /* background: rgba(255, 255, 255, 0.05); */
     border-left: 3px solid rgba(255, 255, 255, 0.2);
     padding: 20px 24px;
     border-radius: 4px;

@@ -43,7 +43,7 @@ title: Home
     
     <div class="callout-cta">
       <span class="emoji">👉</span>
-      <a href="{{ '/projects/' | relative_url }}">Explore my Portfolio</a>
+      <a href="{{ '/projects/' | relative_url }}">Explore a selection of my projects</a>
     </div>
   </div>
 </div>
