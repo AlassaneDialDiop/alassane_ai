@@ -10,6 +10,8 @@ technologies: [Python, GPT-4, Hugging Face, Selenium, Computer Vision, NLP, Dock
 
 Developed an innovative AI-powered quality assurance tool that combines the capabilities of GPT models and Hugging Face transformers to automate software testing, bug detection, and quality control processes. This tool significantly reduces manual testing effort while improving test coverage and accuracy.
 
+<img src="/assets/ai-quality-assurance-image.png" alt="AI Quality Assurance Tool" class="project-image">
+
 ## Key Features
 
 ### 1. Intelligent Test Generation

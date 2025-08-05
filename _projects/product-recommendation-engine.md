@@ -10,6 +10,8 @@ technologies: [Python, Deep Learning, Apache Spark, Redis, AWS, Real-time ML]
 
 Built a sophisticated product recommendation engine for a major e-commerce platform, processing millions of user interactions daily to deliver personalized product suggestions. The system combines multiple recommendation strategies to maximize relevance and conversion rates.
 
+<img src="/assets/product-recommendation-engine-image.png" alt="Product Recommendation Engine" class="project-image">
+
 ## Key Features
 
 ### 1. Multi-Strategy Recommendation System

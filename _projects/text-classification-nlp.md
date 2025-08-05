@@ -10,6 +10,16 @@ technologies: [Python, BERT, Transformers, TensorFlow, Hugging Face, NLP]
 
 Developed an advanced text classification system using state-of-the-art Natural Language Processing techniques, specifically leveraging fine-tuned BERT (Bidirectional Encoder Representations from Transformers) models to achieve high-accuracy text categorization across multiple domains.
 
+TextClassifierGPT allows you classify texts using your file and your classification system— additionally provide a few examples for better results.
+
+## Live Demo
+
+### Interactive Web Application
+Link to the streamlit app — [textclassifier.streamlit.app](https://textclassifier.streamlit.app/)
+
+### Video Demo
+<iframe width="560" height="315" src="https://www.youtube.com/embed/MObBUx3PQwc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
 ## Key Features
 
 ### 1. Multi-Domain Classification

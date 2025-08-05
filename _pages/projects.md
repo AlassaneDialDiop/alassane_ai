@@ -26,11 +26,13 @@ permalink: /projects/
       <div class="project-item">
         <h2><a href="{{ '/projects/ai-quality-assurance/' | relative_url }}">3. AI-powered Quality Assurance tool (GPT+HuggingFace)</a></h2>
         <p>— Developed an intelligent quality assurance system leveraging GPT and HuggingFace models for automated testing and validation.</p>
+        <img src="/assets/ai-quality-assurance-image.png" alt="AI Quality Assurance Tool" class="project-thumbnail">
       </div>
       
       <div class="project-item">
         <h2><a href="{{ '/projects/product-recommendation-engine/' | relative_url }}">4. Product recommendation engine</a></h2>
         <p>— Built scalable recommendation algorithms for e-commerce platforms using collaborative and content-based filtering.</p>
+        <img src="/assets/product-recommendation-engine-image.png" alt="Product Recommendation Engine" class="project-thumbnail">
       </div>
       
       <div class="project-item">
