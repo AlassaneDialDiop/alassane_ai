@@ -229,14 +229,17 @@ body .nav-links a:hover {
 
 /* Testimonial with image */
 .testimonial-with-image {
-    display: flex;
+    display: flex !important;
+    flex-direction: row !important;
     gap: 40px;
     align-items: flex-start;
     margin-bottom: 40px;
+    width: 100%;
 }
 
 .testimonial-image {
     flex: 0 0 150px;
+    flex-shrink: 0;
 }
 
 .testimonial-image img,
@@ -248,6 +251,7 @@ body .nav-links a:hover {
 
 .testimonial-content {
     flex: 1;
+    min-width: 0;
 }
 
 .testimonial-quote {
@@ -295,6 +299,40 @@ body .nav-links a:hover {
     line-height: 1.6;
     color: rgba(255, 255, 255, 0.7);
     margin-bottom: 24px;
+}
+
+/* Testimonials page specific styles */
+.testimonials-wrapper {
+    background: rgb(25, 25, 25);
+}
+
+.testimonials-section {
+    max-width: 900px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.testimonials-section h1 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.testimonials-section p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 16px;
+}
+
+.testimonials-section hr {
+    border: none;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.1);
+    margin: 32px 0;
 }
 
 /* How I Work Section */
