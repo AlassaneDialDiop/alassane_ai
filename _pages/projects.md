@@ -1,101 +1,46 @@
 ---
-layout: page
+layout: default
 title: Projects
 permalink: /projects/
 ---
 
-## My Work
-
-Here's a selection of data science and AI projects I've worked on, showcasing my expertise in machine learning, NLP, recommendation systems, and data visualization.
-
-<div class="projects-grid">
-{% for project in site.projects %}
-  <div class="project-card">
-    <h3><a href="{{ project.url | relative_url }}">{{ project.title }}</a></h3>
-    <p class="project-subtitle">{{ project.subtitle }}</p>
-    <div class="project-meta">
-      <span class="project-date">{{ project.date | date: "%B %Y" }}</span>
-    </div>
-    <div class="project-technologies">
-      {% for tech in project.technologies limit:4 %}
-        <span class="tech-tag">{{ tech }}</span>
-      {% endfor %}
-      {% if project.technologies.size > 4 %}
-        <span class="tech-tag">+{{ project.technologies.size | minus: 4 }} more</span>
-      {% endif %}
+<div class="full-width-section projects-wrapper">
+  <div class="projects-section">
+    <h1>Portfolio</h1>
+    <p class="projects-subtitle">— As of September 2023</p>
+    
+    <div class="projects-list">
+      <div class="project-item">
+        <h2><a href="{{ '/projects/text-classification-nlp/' | relative_url }}">1. Text Classification using NLP (Fine-tuned BERT Models)</a></h2>
+        <p>— Fine-tuned BERT models to achieve superior accuracy in text classification tasks, demonstrating advanced NLP skills.</p>
+      </div>
+      
+      <div class="project-item">
+        <h2><a href="{{ '/projects/recommender-system-tastet/' | relative_url }}">2. End-to-End Recommender System — <strong>Tastet Project</strong></a></h2>
+        <p>— Developed a comprehensive recommender system from concept to deployment.</p>
+        <p>— Accolade — with a Mitacs Sponsorship of $15,000, underscoring the project's innovation and practical value.</p>
+        <p>— Learn more about this → <a href="https://aidotai.com/testimonials" target="_blank"><strong>here</strong></a></p>
+      </div>
+      
+      <div class="project-item">
+        <h2><a href="{{ '/projects/ai-quality-assurance/' | relative_url }}">3. AI-powered Quality Assurance tool (GPT+HuggingFace)</a></h2>
+        <p>— Developed an intelligent quality assurance system leveraging GPT and HuggingFace models for automated testing and validation.</p>
+      </div>
+      
+      <div class="project-item">
+        <h2><a href="{{ '/projects/product-recommendation-engine/' | relative_url }}">4. Product recommendation engine</a></h2>
+        <p>— Built scalable recommendation algorithms for e-commerce platforms using collaborative and content-based filtering.</p>
+      </div>
+      
+      <div class="project-item">
+        <h2><a href="{{ '/projects/customer-scoring-system/' | relative_url }}">5. Advanced Customer Scoring System</a></h2>
+        <p>— Implemented machine learning models to predict customer value and behavior patterns for strategic business decisions.</p>
+      </div>
+      
+      <div class="project-item">
+        <h2><a href="{{ '/projects/data-reporting-visualization/' | relative_url }}">6. Data Reporting and Visualization Expertise</a></h2>
+        <p>— Created interactive dashboards and comprehensive reporting solutions for data-driven insights and decision making.</p>
+      </div>
     </div>
   </div>
-{% endfor %}
 </div>
-
-<style>
-.projects-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-  gap: 2rem;
-  margin-top: 2rem;
-}
-
-.project-card {
-  background: #f8f9fa;
-  padding: 1.5rem;
-  border-radius: 8px;
-  border: 1px solid #e9ecef;
-  transition: transform 0.2s, box-shadow 0.2s;
-}
-
-.project-card:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-}
-
-.project-card h3 {
-  margin-top: 0;
-  margin-bottom: 0.5rem;
-}
-
-.project-card h3 a {
-  color: #333;
-  text-decoration: none;
-}
-
-.project-card h3 a:hover {
-  color: #0066cc;
-}
-
-.project-subtitle {
-  color: #666;
-  font-size: 0.95rem;
-  margin-bottom: 1rem;
-  line-height: 1.4;
-}
-
-.project-meta {
-  margin-bottom: 1rem;
-}
-
-.project-date {
-  color: #888;
-  font-size: 0.9rem;
-}
-
-.project-technologies {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-}
-
-.tech-tag {
-  background: #e9ecef;
-  padding: 0.25rem 0.75rem;
-  border-radius: 20px;
-  font-size: 0.85rem;
-  color: #495057;
-}
-
-@media (max-width: 768px) {
-  .projects-grid {
-    grid-template-columns: 1fr;
-  }
-}
-</style>
