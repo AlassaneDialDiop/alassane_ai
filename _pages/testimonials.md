@@ -44,8 +44,14 @@ permalink: /testimonials/
     <h1>Overview of the project</h1>
 
     <div class="overview-images">
-      <img src="/assets/tastet-overview-1.png" alt="Tastet Overview 1" class="overview-image">
-      <img src="/assets/tastet-overview-2.png" alt="Tastet Overview 2" class="overview-image">
+      <div class="overview-image-container">
+        <img src="/assets/tastet-overview-1.png" alt="AI-generated Personal TOP 10 of the week" class="overview-image">
+        <p class="image-caption">AI-generated Personal TOP 10 of the week</p>
+      </div>
+      <div class="overview-image-container">
+        <img src="/assets/tastet-overview-2.png" alt="6-month research supervised @ HEC Montréal" class="overview-image">
+        <p class="image-caption">6-month research supervised @ HEC Montréal</p>
+      </div>
     </div>
 
   </div>
