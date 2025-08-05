@@ -481,3 +481,212 @@ body .footer {
         width: auto;
     }
 }
+
+/* About Page Styles */
+.about-banner {
+    width: 100%;
+    margin: -60px -15% 40px;
+    overflow: hidden;
+}
+
+.banner-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.about-intro-section {
+    max-width: 900px;
+    margin: 0 auto 60px;
+    padding: 0 20px;
+}
+
+.intro-columns {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+}
+
+.intro-left {
+    flex: 0 0 200px;
+}
+
+.intro-right {
+    flex: 1;
+}
+
+.about-portrait {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.intro-quote {
+    background: rgba(255, 255, 255, 0.05);
+    border-left: 3px solid rgba(255, 255, 255, 0.2);
+    padding: 20px 24px;
+    border-radius: 4px;
+}
+
+.intro-quote p {
+    margin-bottom: 16px;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 16px;
+}
+
+.intro-quote p:last-child {
+    margin-bottom: 0;
+}
+
+.intro-quote a {
+    color: rgba(255, 255, 255, 0.9);
+    text-decoration: none;
+}
+
+.intro-quote a:hover {
+    text-decoration: underline;
+}
+
+/* Toggle Sections */
+.toggle-section {
+    margin-bottom: 0;
+}
+
+.toggle-checkbox {
+    display: none;
+}
+
+.toggle-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    padding: 20px 0;
+    user-select: none;
+}
+
+.toggle-header h1 {
+    font-size: 24px;
+    font-weight: 600;
+    margin: 0;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.toggle-arrow {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.6);
+    transition: transform 0.2s;
+}
+
+.toggle-checkbox:checked + .toggle-header .toggle-arrow {
+    transform: rotate(90deg);
+}
+
+.toggle-content {
+    display: none;
+    padding: 0 0 40px 0;
+}
+
+.toggle-checkbox:checked ~ .toggle-content {
+    display: block;
+}
+
+/* Section Dividers */
+.section-divider {
+    border: none;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.1);
+    margin: 0;
+}
+
+/* About Page Typography */
+.page-content h1 {
+    font-size: 24px;
+    font-weight: 600;
+    margin: 40px 0 20px;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.page-content h2 {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 24px 0 12px;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.job-info {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+.accomplishment {
+    color: rgba(255, 255, 255, 0.7);
+    font-style: italic;
+    margin: 20px 0;
+}
+
+.page-content ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 24px 0;
+}
+
+.page-content li {
+    position: relative;
+    padding-left: 24px;
+    margin-bottom: 12px;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 16px;
+}
+
+.page-content li:before {
+    content: "•";
+    position: absolute;
+    left: 8px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+/* Resources Link */
+.resources-link {
+    margin: 40px 0;
+}
+
+.child-page-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 16px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 6px;
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    transition: background 0.2s;
+}
+
+.child-page-link:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+/* Responsive About Page */
+@media (max-width: 768px) {
+    .about-banner {
+        margin: -40px -20px 30px;
+    }
+    
+    .intro-columns {
+        flex-direction: column;
+        gap: 24px;
+    }
+    
+    .intro-left {
+        flex: none;
+        width: 150px;
+    }
+    
+    .toggle-header h1 {
+        font-size: 20px;
+    }
+}
