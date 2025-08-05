@@ -483,14 +483,19 @@ body .footer {
 }
 
 /* About Page Styles */
-body .page-content {
+.about-page-content {
     background: rgb(25, 25, 25);
     color: rgba(255, 255, 255, 0.9);
+    padding: 0;
+    margin: 0;
 }
 
 .about-banner {
-    width: 100%;
-    margin: -60px -15% 40px;
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+    margin-right: calc(-50vw + 50%);
+    margin-top: -60px;
+    margin-bottom: 40px;
     overflow: hidden;
 }
 
@@ -606,14 +611,14 @@ body .page-content {
 }
 
 /* About Page Typography */
-.page-content h1 {
+.about-page-content h1 {
     font-size: 24px;
     font-weight: 600;
     margin: 40px 0 20px;
     color: rgba(255, 255, 255, 0.9);
 }
 
-.page-content h2 {
+.about-page-content h2 {
     font-size: 18px;
     font-weight: 600;
     margin: 24px 0 12px;
@@ -632,13 +637,13 @@ body .page-content {
     margin: 20px 0;
 }
 
-.page-content ul {
+.about-page-content ul {
     list-style: none;
     padding: 0;
     margin: 0 0 24px 0;
 }
 
-.page-content li {
+.about-page-content li {
     position: relative;
     padding-left: 24px;
     margin-bottom: 12px;
@@ -647,7 +652,7 @@ body .page-content {
     font-size: 16px;
 }
 
-.page-content li:before {
+.about-page-content li:before {
     content: "•";
     position: absolute;
     left: 8px;
