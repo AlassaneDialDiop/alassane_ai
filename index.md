@@ -103,7 +103,7 @@ title: Home
       <span class="contact-emoji">📧</span>
       <div class="contact-details">
         <p><strong>Contact</strong><br>
-        <a href="mailto:alassanedialdiop@gmail.com">alassanedialdiop@gmail.com</a><br>
+        <a href="mailto:alassanedialdiop@gmail.com">alassanedialdiop@gmail.com</a></p>
       </div>
     </div>
     
