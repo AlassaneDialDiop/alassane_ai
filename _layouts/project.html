@@ -1,114 +1,276 @@
----
-layout: default
----
-
-<div class="project-page">
-    <header class="project-header">
-        <h1>{{ page.title }}</h1>
-        {% if page.subtitle %}
-        <p class="project-subtitle">{{ page.subtitle }}</p>
-        {% endif %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }} | Alassane Diop</title>
+    <meta name="description" content="{{ page.subtitle | default: 'Data science project by Alassane Diop' }}">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        /* Reset and Base */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
         
-        <div class="project-meta">
-            {% if page.technologies %}
-            <div class="technologies">
-                <strong>Technologies:</strong>
-                {% for tech in page.technologies %}
-                <span class="tech-tag">{{ tech }}</span>
-                {% endfor %}
-            </div>
-            {% endif %}
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+            color: rgba(255, 255, 255, 0.9);
+            line-height: 1.5;
+            background: rgb(25, 25, 25);
+        }
+        
+        /* Container */
+        .container {
+            max-width: 100%;
+            padding: 0;
+            background: rgb(25, 25, 25);
+            margin: 0;
+        }
+        
+        /* Navigation */
+        .navigation {
+            max-width: 100%;
+            margin: 0;
+            padding: 20px 40px;
+            background: rgb(25, 25, 25);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .nav-logo {
+            color: rgba(255, 255, 255, 0.9);
+            text-decoration: none;
+            font-size: 1.25rem;
+            font-weight: 600;
+        }
+        
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .nav-links li {
+            list-style: none;
+        }
+        
+        .nav-links a {
+            color: rgba(255, 255, 255, 0.6);
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+        
+        .nav-links a:hover,
+        .nav-links a.active {
+            color: rgba(255, 255, 255, 0.9);
+        }
+        
+        /* Main Content */
+        .main-content {
+            margin: 0;
+            padding: 0;
+        }
+        
+        /* Project Page */
+        .project-page {
+            max-width: 900px;
+            margin: 60px auto;
+            padding: 0 40px;
+        }
+        
+        .project-header {
+            margin-bottom: 40px;
+        }
+        
+        .project-header h1 {
+            font-size: 36px;
+            font-weight: 700;
+            margin-bottom: 16px;
+            color: rgba(255, 255, 255, 0.9);
+            line-height: 1.2;
+        }
+        
+        .project-subtitle {
+            font-size: 18px;
+            color: rgba(255, 255, 255, 0.7);
+            margin-bottom: 32px;
+            line-height: 1.4;
+        }
+        
+        /* Project Image */
+        .project-image {
+            width: 100%;
+            max-width: 600px;
+            height: auto;
+            border-radius: 8px;
+            margin: 32px 0;
+            display: block;
+        }
+        
+        /* Content Styling */
+        .project-content h2 {
+            font-size: 24px;
+            font-weight: 600;
+            margin: 32px 0 16px;
+            color: rgba(255, 255, 255, 0.9);
+        }
+        
+        .project-content h3 {
+            font-size: 20px;
+            font-weight: 600;
+            margin: 24px 0 12px;
+            color: rgba(255, 255, 255, 0.9);
+        }
+        
+        .project-content p {
+            font-size: 16px;
+            line-height: 1.6;
+            color: rgba(255, 255, 255, 0.7);
+            margin-bottom: 16px;
+        }
+        
+        .project-content ul {
+            list-style: none;
+            padding: 0;
+            margin: 16px 0;
+        }
+        
+        .project-content li {
+            position: relative;
+            padding-left: 24px;
+            margin-bottom: 8px;
+            line-height: 1.6;
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 16px;
+        }
+        
+        .project-content li:before {
+            content: "—";
+            position: absolute;
+            left: 0;
+            color: rgba(255, 255, 255, 0.5);
+        }
+        
+        .project-content a {
+            color: rgba(255, 255, 255, 0.9);
+            text-decoration: none;
+        }
+        
+        .project-content a:hover {
+            text-decoration: underline;
+        }
+        
+        /* Navigation */
+        .project-navigation {
+            margin-top: 60px;
+            padding-top: 24px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .back-link {
+            color: rgba(255, 255, 255, 0.9);
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 8px 16px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 6px;
+            transition: background 0.2s;
+        }
+        
+        .back-link:hover {
+            background: rgba(255, 255, 255, 0.1);
+            text-decoration: none;
+        }
+        
+        /* Footer */
+        .footer {
+            background: rgb(25, 25, 25);
+            color: rgba(255, 255, 255, 0.5);
+            padding: 40px 15%;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            text-align: left;
+            width: 100%;
+            margin: 0;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .navigation {
+                padding: 16px 20px;
+                flex-wrap: wrap;
+            }
             
-            {% if page.date %}
-            <div class="project-date">
-                <strong>Completed:</strong> {{ page.date | date: "%B %Y" }}
+            .nav-links {
+                gap: 1rem;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            
+            .project-page {
+                margin: 40px auto;
+                padding: 0 20px;
+            }
+            
+            .project-header h1 {
+                font-size: 28px;
+            }
+            
+            .project-subtitle {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav class="navigation">
+            <a href="/" class="nav-logo">Alassane Diop</a>
+            
+            <ul class="nav-links">
+                <li><a href="/">Home</a></li>
+                <li><a href="/about/">About</a></li>
+                <li><a href="/projects/" class="active">Projects</a></li>
+                <li><a href="/case-studies/">Case Studies</a></li>
+                <li><a href="/testimonials/">Testimonials</a></li>
+                <li><a href="/contact/">Contact</a></li>
+            </ul>
+        </nav>
+        
+        <main class="main-content">
+            <div class="project-page">
+                <header class="project-header">
+                    <h1>{{ page.title }}</h1>
+                    {% if page.subtitle %}
+                    <p class="project-subtitle">{{ page.subtitle }}</p>
+                    {% endif %}
+                </header>
+                
+                <div class="project-content">
+                    {{ content }}
+                </div>
+                
+                <div class="project-navigation">
+                    <a href="/projects/" class="back-link">← Back to All Projects</a>
+                </div>
             </div>
-            {% endif %}
-        </div>
-    </header>
-    
-    <div class="project-content">
-        {{ content }}
+        </main>
+        
+        <footer class="footer">
+            <p>&copy; 2025 Alassane Diop. All rights reserved.</p>
+        </footer>
     </div>
-    
-    <div class="project-navigation">
-        <a href="{{ '/projects/' | relative_url }}" class="back-link">← Back to All Projects</a>
-    </div>
-</div>
-
-<style>
-.project-page {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 2rem 1rem;
-}
-
-.project-header {
-    margin-bottom: 3rem;
-    text-align: center;
-}
-
-.project-header h1 {
-    margin-bottom: 1rem;
-}
-
-.project-subtitle {
-    font-size: 1.2rem;
-    color: #666;
-    margin-bottom: 2rem;
-}
-
-.project-meta {
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-    flex-wrap: wrap;
-    margin-top: 2rem;
-}
-
-.technologies {
-    display: flex;
-    gap: 0.5rem;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-.tech-tag {
-    background: #f0f0f0;
-    padding: 0.25rem 0.75rem;
-    border-radius: 20px;
-    font-size: 0.9rem;
-}
-
-.project-content {
-    margin-bottom: 3rem;
-}
-
-.project-content h2 {
-    margin-top: 2.5rem;
-    margin-bottom: 1rem;
-}
-
-.project-content h3 {
-    margin-top: 2rem;
-    margin-bottom: 0.75rem;
-}
-
-.project-navigation {
-    margin-top: 3rem;
-    padding-top: 2rem;
-    border-top: 1px solid #eee;
-}
-
-.back-link {
-    color: #333;
-    text-decoration: none;
-    display: inline-flex;
-    align-items: center;
-    gap: 0.5rem;
-}
-
-.back-link:hover {
-    text-decoration: underline;
-}
-</style>
+</body>
+</html>

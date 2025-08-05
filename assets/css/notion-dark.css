@@ -776,6 +776,15 @@ body .footer {
     text-decoration: underline;
 }
 
+.project-thumbnail {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 16px;
+    display: block;
+}
+
 /* Responsive Projects Page */
 @media (max-width: 768px) {
     .projects-section h1 {

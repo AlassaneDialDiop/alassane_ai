@@ -10,6 +10,8 @@ technologies: [Python, TensorFlow, Collaborative Filtering, Content-Based Filter
 
 Designed and implemented a comprehensive recommendation system for [Tastet.ca](http://tastet.ca/), a innovative food technology startup. The system leverages both collaborative and content-based filtering techniques to provide personalized food recommendations, enhancing user engagement and satisfaction.
 
+<img src="/assets/tastet-project-image.png" alt="Tastet Recommender System" class="project-image">
+
 ## Key Features
 
 ### 1. Hybrid Recommendation Engine

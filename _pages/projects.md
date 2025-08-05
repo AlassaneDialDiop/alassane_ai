@@ -20,6 +20,7 @@ permalink: /projects/
         <p>— Developed a comprehensive recommender system from concept to deployment.</p>
         <p>— Accolade — with a Mitacs Sponsorship of $15,000, underscoring the project's innovation and practical value.</p>
         <p>— Learn more about this → <a href="https://aidotai.com/testimonials" target="_blank"><strong>here</strong></a></p>
+        <img src="/assets/tastet-project-image.png" alt="Tastet Recommender System" class="project-thumbnail">
       </div>
       
       <div class="project-item">
