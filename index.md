@@ -15,6 +15,7 @@ title: Home
     <p>My expertise lies in leveraging the power of AI and advanced analysis techniques to develop applications that enhance user experiences and operational efficiency.</p>
     <p>I am driven by the challenge of transforming complex data into actionable insights that propel business growth and customer/user satisfaction.</p>
   </div>
+  </div>
 </div>
 
 <div class="full-width-section expertise-wrapper">
