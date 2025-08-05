@@ -19,7 +19,7 @@ permalink: /projects/
         <h2><a href="{{ '/projects/recommender-system-tastet/' | relative_url }}">2. End-to-End Recommender System — <strong>Tastet Project</strong></a></h2>
         <p>— Developed a comprehensive recommender system from concept to deployment.</p>
         <p>— Accolade — with a Mitacs Sponsorship of $15,000, underscoring the project's innovation and practical value.</p>
-        <p>— Learn more about this → <a href="https://aidotai.com/testimonials" target="_blank"><strong>here</strong></a></p>
+        <p>— Learn more about this → <a href="{{ '/testimonials/' | relative_url }}"><strong>here</strong></a></p>
         <img src="/assets/tastet-project-image.png" alt="Tastet Recommender System" class="project-thumbnail">
       </div>
       
