@@ -166,7 +166,6 @@
         
         .toggle-header {
             display: flex;
-            justify-content: space-between;
             align-items: center;
             cursor: pointer;
             padding: 20px 0;
@@ -178,12 +177,16 @@
             font-weight: 600;
             margin: 0;
             color: rgba(255, 255, 255, 0.9);
+            display: flex;
+            align-items: center;
+            gap: 8px;
         }
         
         .toggle-arrow {
             font-size: 14px;
             color: rgba(255, 255, 255, 0.6);
             transition: transform 0.2s;
+            margin-left: 8px;
         }
         
         .toggle-checkbox:checked + .toggle-header .toggle-arrow {
@@ -361,8 +364,7 @@
                 <div class="toggle-section">
                     <input type="checkbox" id="work-experience" class="toggle-checkbox">
                     <label for="work-experience" class="toggle-header">
-                        <h1><strong>👨‍💻</strong> Work experience</h1>
-                        <span class="toggle-arrow">▶</span>
+                        <h1><strong>👨‍💻</strong> Work experience <span class="toggle-arrow">▶</span></h1>
                     </label>
                     <div class="toggle-content">
                         <h2>Data scientist<strong>, Marketing</strong></h2>
@@ -414,8 +416,7 @@
                 <div class="toggle-section">
                     <input type="checkbox" id="education" class="toggle-checkbox">
                     <label for="education" class="toggle-header">
-                        <h1>📚 Education</h1>
-                        <span class="toggle-arrow">▶</span>
+                        <h1>📚 Education <span class="toggle-arrow">▶</span></h1>
                     </label>
                     <div class="toggle-content">
                         <h2><strong>Master of Science (M.Sc.) - Data science and Business Analytics</strong></h2>
@@ -433,8 +434,7 @@
                 <div class="toggle-section">
                     <input type="checkbox" id="awards" class="toggle-checkbox">
                     <label for="awards" class="toggle-header">
-                        <h1><strong>🥇</strong> Awards</h1>
-                        <span class="toggle-arrow">▶</span>
+                        <h1><strong>🥇</strong> Awards <span class="toggle-arrow">▶</span></h1>
                     </label>
                     <div class="toggle-content">
                         <p><em>Awards content to be added</em></p>
@@ -446,8 +446,7 @@
                 <div class="toggle-section">
                     <input type="checkbox" id="core-skills" class="toggle-checkbox">
                     <label for="core-skills" class="toggle-header">
-                        <h1>🛠 Core skills</h1>
-                        <span class="toggle-arrow">▶</span>
+                        <h1>🛠 Core skills <span class="toggle-arrow">▶</span></h1>
                     </label>
                     <div class="toggle-content">
                         <p><em>Core skills content to be added</em></p>
@@ -459,8 +458,7 @@
                 <div class="toggle-section">
                     <input type="checkbox" id="more" class="toggle-checkbox">
                     <label for="more" class="toggle-header">
-                        <h1>➕ <strong>More</strong></h1>
-                        <span class="toggle-arrow">▶</span>
+                        <h1>➕ <strong>More</strong> <span class="toggle-arrow">▶</span></h1>
                     </label>
                     <div class="toggle-content">
                         <p><em>More content to be added</em></p>
