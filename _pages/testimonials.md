@@ -43,5 +43,10 @@ permalink: /testimonials/
 
     <h1>Overview of the project</h1>
 
+    <div class="overview-images">
+      <img src="/assets/tastet-overview-1.png" alt="Tastet Overview 1" class="overview-image">
+      <img src="/assets/tastet-overview-2.png" alt="Tastet Overview 2" class="overview-image">
+    </div>
+
   </div>
 </div>
