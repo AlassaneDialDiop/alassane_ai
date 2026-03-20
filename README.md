@@ -1,10 +1,10 @@
 # Alassane.ai - Portfolio Website
 
-Personal portfolio website for Alassane Diop - Data Scientist & AI Consultant. Built with Jekyll and designed to match the Notion portfolio aesthetic.
+Personal portfolio website for Alassane Diop - ML / AI Engineer. Built with Jekyll and designed to match the Notion portfolio aesthetic.
 
 ## 🌟 Overview
 
-This website is a pixel-perfect recreation of Alassane's Notion portfolio, featuring a dark theme and modern design. It showcases data science projects, client testimonials, and professional expertise in AI and machine learning.
+This website is a pixel-perfect recreation of Alassane's Notion portfolio, featuring a dark theme and modern design. It showcases ML/AI engineering projects, client testimonials, and professional expertise in building and shipping AI systems.
 
 ## 🎨 Design Philosophy
 
@@ -141,7 +141,7 @@ The site automatically deploys to GitHub Pages when changes are pushed to the ma
 
 - **Home** - Introduction and expertise overview
 - **About** - Detailed background with collapsible sections
-- **Projects** - Portfolio of data science projects
+- **Projects** - Portfolio of ML/AI engineering projects
 - **Testimonials** - Client feedback and project outcomes
 - **Contact** - Contact information and Calendly integration
 

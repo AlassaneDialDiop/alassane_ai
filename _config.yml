@@ -1,9 +1,9 @@
 # Site settings
 title: Alassane Diop
 email: alassanedialdiop@gmail.com
-description: >- 
-  Alassane Diop - Data Scientist & AI Consultant specializing in machine learning, 
-  recommendation systems, and predictive analytics. Based in Montreal, Quebec.
+description: >-
+  Alassane Diop - ML / AI Engineer building and shipping AI systems — recommendation engines,
+  computer vision, LLM pipelines, and scalable data infrastructure. Based in Montreal, Quebec.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://alassane.ai" # your custom domain
 

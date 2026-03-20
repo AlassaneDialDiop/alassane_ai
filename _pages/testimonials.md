@@ -39,7 +39,7 @@ permalink: /testimonials/
     <p>During my M.Sc. Data Science at HEC Montreal, I was selected for an internship with the startup Tastet.ca.<br>
     It was the start of an exciting journey that led us to sponsorships from the <a href="https://www.mitacs.ca/">Mitacs</a> and supervising from HEC professor <a href="https://www.hec.ca/profs/laurent.charlin.html">Laurent Charlin</a>.</p>
 
-    <p>This experience was later enriched with a consultant role for the company, acting as the AI expert for them.</p>
+    <p>This experience was later enriched with a consulting role as the AI engineer for the company.</p>
 
     <h1>Overview of the project</h1>
 

@@ -11,9 +11,9 @@ title: Home
   <div class="hero-right">
     <div class="hero-emoji-placeholder"></div>
     <h1>Hi, I'm Alassane</h1>
-    <h3>Data scientist<br>specializing in delivering AI and analytics-driven solutions</h3>
-    <p>My expertise lies in leveraging the power of AI and advanced analysis techniques to develop applications that enhance user experiences and operational efficiency.</p>
-    <p>I am driven by the challenge of transforming complex data into actionable insights that propel business growth and customer/user satisfaction.</p>
+    <h3>ML / AI Engineer<br>who builds and ships AI systems end-to-end</h3>
+    <p>I build recommendation engines, computer vision applications, LLM pipelines, and scalable data infrastructure — taking projects from research to production.</p>
+    <p>Currently building two AI products as a solo founder, and engineering ML systems at Browns Shoes.</p>
   </div>
   </div>
 </div>
@@ -21,24 +21,21 @@ title: Home
 <div class="full-width-section expertise-wrapper">
   <div class="expertise-section">
     <h1>Expertise</h1>
-    
-    <h2>AI-Driven Solutions Expertise</h2>
+
+    <h2>AI / ML Engineering</h2>
     <ul>
-      <li>Proven proficiency in developing cutting-edge AI-driven solutions<br>
-      including ChatGPT applications, advanced recommender systems, and personalized bots.</li>
+      <li>LLMs (Claude, OpenAI, Gemini), RAG pipelines, recommendation systems, computer vision, NLP, embeddings, similarity search, and finetuning.</li>
     </ul>
-    
-    <h2>Storytelling with Data</h2>
+
+    <h2>Full-Stack AI Products</h2>
     <ul>
-      <li>I believe in the power of storytelling to convey insights effectively</li>
-      <li>Adept at translating complex data into compelling visual narratives.</li>
+      <li>End-to-end product development — from research and prototyping to production deployment and monitoring.</li>
+      <li>React Native (Expo), Next.js, macOS app development, REST APIs.</li>
     </ul>
-    
-    <h2>Subject Matter Expertise</h2>
-    <p><strong>in CRM and Customer Analytics — Marketing</strong></p>
+
+    <h2>Data & Infrastructure</h2>
     <ul>
-      <li>Connecting Marketing and Tech</li>
-      <li>Supporting audience segmentation, reporting on email performance, bringing value through in-depth analysis</li>
+      <li>Snowflake, dbt, Snowflake Cortex, GCP, semantic layer design, data modeling, CI/CD.</li>
     </ul>
     
     <div class="callout-cta">
@@ -89,10 +86,10 @@ title: Home
     <h1 class="section-title">How I Work</h1>
     
     <ul class="how-i-work">
-      <li><strong>Transparency:</strong> Currently engaged in a role for a Canadian shoe retailer, I prioritize clear communication about my availability and dedication to your project.</li>
-      <li><strong>Focus on the Whole Picture:</strong> I gather pieces through conversations and meticulous document review, ensuring my work aligns seamlessly with all your needs. Beyond algorithms, I understand the contextual nuances that lead to successful AI projects.</li>
-      <li><strong>Iterative Collaboration:</strong> Collaboration is at the heart of my approach. I value iterative feedback, believing that continuous communication refines our shared vision and leads to the most effective outcomes.</li>
-      <li><strong>Adaptability:</strong> Every project is unique, and I embrace the need for adaptability. From adjusting methodologies to refining models, I tailor my approach to suit the specific requirements of your project.</li>
+      <li><strong>Ship It:</strong> I focus on getting AI systems into production — not just building prototypes. Research matters, but deployed systems matter more.</li>
+      <li><strong>End-to-End Ownership:</strong> From data pipelines and model development to API deployment and monitoring, I own the full lifecycle of ML projects.</li>
+      <li><strong>Iterative Engineering:</strong> I build in tight feedback loops — ship early, measure, improve. Continuous iteration leads to better systems.</li>
+      <li><strong>Adaptability:</strong> Every problem is different. I move between LLMs, classical ML, computer vision, and full-stack development depending on what the problem demands.</li>
     </ul>
   </div>
 </div>
