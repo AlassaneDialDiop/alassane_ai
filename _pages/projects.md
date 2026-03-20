@@ -11,14 +11,17 @@ permalink: /projects/
 
     <div class="projects-list">
       <div class="project-item">
-        <h2>1. Olima.ai — Self-Discovery Game with Celebrity Similarity Algorithm</h2>
+        <h2><a href="https://olima.ai" target="_blank">1. Olima.ai — Self-Discovery Game with Celebrity Similarity Algorithm</a></h2>
         <p>— Built and launched a mobile game that matches users to celebrities using an AI similarity algorithm. React Native (Expo), end-to-end product engineering. V12.1 live on the App Store.</p>
         <p>— <a href="https://olima.ai" target="_blank"><strong>olima.ai</strong></a></p>
+        <img src="/assets/olima-hero.png" alt="Olima - Your crowd reveals who you are" class="project-thumbnail">
       </div>
 
       <div class="project-item">
-        <h2>2. Vibecope.ai — macOS Menu Bar App for AI Prompting</h2>
-        <p>— Building a native macOS app for fast, contextual AI prompting directly from the menu bar. Apple Developer Toolchain, Swift.</p>
+        <h2><a href="https://vibecope.ai" target="_blank">2. Vibecope.ai — Get the Best Out of Claude</a></h2>
+        <p>— Built a macOS tool that reads your Claude sessions and injects coaching into Claude's context. Turns vague prompts into precise ones — no API key, no account, one click.</p>
+        <p>— <a href="https://vibecope.ai" target="_blank"><strong>vibecope.ai</strong></a></p>
+        <img src="/assets/vibecope-hero.png" alt="Vibecope - watches you work with Claude" class="project-thumbnail">
       </div>
 
       <div class="project-item">
