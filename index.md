@@ -13,7 +13,7 @@ title: Home
     <h1>Hi, I'm Alassane</h1>
     <h3>ML / AI Engineer<br>who builds and ships AI systems end-to-end</h3>
     <p>I build recommendation engines, computer vision applications, LLM pipelines, and scalable data infrastructure — taking projects from research to production.</p>
-    <p>Currently building two AI products as a solo founder, and engineering ML systems at Browns Shoes.</p>
+    <p>Currently engineering ML systems at Browns Shoes — recommendation engines, computer vision, and LLM pipelines in production.</p>
   </div>
   </div>
 </div>
@@ -27,10 +27,10 @@ title: Home
       <li>LLMs (Claude, OpenAI, Gemini), RAG pipelines, recommendation systems, computer vision, NLP, embeddings, similarity search, and finetuning.</li>
     </ul>
 
-    <h2>Full-Stack AI Products</h2>
+    <h2>Production ML & Deployment</h2>
     <ul>
-      <li>End-to-end product development — from research and prototyping to production deployment and monitoring.</li>
-      <li>React Native (Expo), Next.js, macOS app development, REST APIs.</li>
+      <li>End-to-end ML lifecycle — from data pipelines and model training to real-time inference, API deployment, and monitoring.</li>
+      <li>GCP, Docker, REST APIs, CI/CD.</li>
     </ul>
 
     <h2>Data & Infrastructure</h2>
@@ -89,7 +89,7 @@ title: Home
       <li><strong>Ship It:</strong> I focus on getting AI systems into production — not just building prototypes. Research matters, but deployed systems matter more.</li>
       <li><strong>End-to-End Ownership:</strong> From data pipelines and model development to API deployment and monitoring, I own the full lifecycle of ML projects.</li>
       <li><strong>Iterative Engineering:</strong> I build in tight feedback loops — ship early, measure, improve. Continuous iteration leads to better systems.</li>
-      <li><strong>Adaptability:</strong> Every problem is different. I move between LLMs, classical ML, computer vision, and full-stack development depending on what the problem demands.</li>
+      <li><strong>Depth Where It Counts:</strong> I specialize in recommendation systems and ranking models, and I know when to reach for classical ML, deep learning, or LLMs to solve the problem at hand.</li>
     </ul>
   </div>
 </div>
@@ -106,7 +106,7 @@ title: Home
     
     <div class="button-group">
       <a href="https://www.linkedin.com/in/alassanediop/" class="button" target="_blank">LinkedIn</a>
-      <a href="https://drive.google.com/file/d/1A0rvPokKQF2VRhOnQkFvyS-v23pvgxYv/view?usp=sharing" class="button" target="_blank">Resume</a>
+      <a href="https://drive.google.com/file/d/1f2_BQbYDr7TJOU32iuDXytGGJPEqPREw/view?usp=drive_link" class="button" target="_blank">Resume</a>
     </div>
     
     <div class="calendly-wrapper">
