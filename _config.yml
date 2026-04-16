@@ -7,6 +7,21 @@ description: >-
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://alassane.ai" # your custom domain
 
+# Open Graph defaults
+tagline: "ML Engineer"
+author:
+  name: Alassane Diop
+defaults_og:
+  image: /assets/alassane-portrait.png
+
+# jekyll-seo-tag defaults
+twitter:
+  card: summary_large_image
+social:
+  name: Alassane Diop
+  links:
+    - https://www.linkedin.com/in/alassanediop/
+
 # Build settings
 theme: null
 plugins:

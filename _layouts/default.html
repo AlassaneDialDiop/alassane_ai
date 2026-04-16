@@ -8,6 +8,18 @@
     
     <!-- SEO -->
     {% seo %}
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="{{ page.og_title | default: 'Alassane Diop — ML Engineer' }}">
+    <meta property="og:description" content="{{ page.og_description | default: 'I build and ship ML systems end-to-end — recommendation engines, ranking models, and production pipelines.' }}">
+    <meta property="og:image" content="{{ '/assets/alassane-portrait.png' | absolute_url }}">
+    <meta property="og:url" content="{{ page.url | absolute_url }}">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Alassane Diop">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{{ page.og_title | default: 'Alassane Diop — ML Engineer' }}">
+    <meta name="twitter:description" content="{{ page.og_description | default: 'I build and ship ML systems end-to-end — recommendation engines, ranking models, and production pipelines.' }}">
+    <meta name="twitter:image" content="{{ '/assets/alassane-portrait.png' | absolute_url }}">
     
     <!-- Styles -->
     <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
