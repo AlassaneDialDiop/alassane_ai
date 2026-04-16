@@ -13,7 +13,7 @@ title: Home
     <h1>Hi, I'm Alassane</h1>
     <h3>ML / AI Engineer<br>who builds and ships AI systems end-to-end</h3>
     <p>I build recommendation engines, computer vision applications, LLM pipelines, and scalable data infrastructure — taking projects from research to production.</p>
-    <p>Currently engineering ML systems at Browns Shoes — recommendation engines, computer vision, and LLM pipelines in production.</p>
+    <p>Currently engineering ML systems — recommendation engines, computer vision, and LLM pipelines in production.</p>
   </div>
   </div>
 </div>
