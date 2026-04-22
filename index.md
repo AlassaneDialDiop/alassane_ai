@@ -106,7 +106,7 @@ title: Home
     
     <div class="button-group">
       <a href="https://www.linkedin.com/in/alassanediop/" class="button" target="_blank">LinkedIn</a>
-      <a href="https://drive.google.com/file/d/1f2_BQbYDr7TJOU32iuDXytGGJPEqPREw/view?usp=drive_link" class="button" target="_blank">Resume</a>
+      <a href="https://drive.google.com/file/d/1FgsOuQY1ZuS-_8b6-Errdca4kSpp3_N1/view?usp=sharing" class="button" target="_blank">Resume</a>
     </div>
     
     <div class="calendly-wrapper">
