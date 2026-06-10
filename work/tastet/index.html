@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tastet — research-funded recsys in production | Alassane Diop</title>
+  <meta name="description" content="Case study: a Mitacs-funded hybrid recommender system on GCP — 8 ranking models benchmarked against accuracy and a custom fairness metric, deployed live." />
+  <link rel="canonical" href="https://alassane.ai/work/tastet/" />
+  <meta property="og:title" content="Tastet — research-funded recsys in production" />
+  <meta property="og:image" content="https://alassane.ai/assets/img/tastet-project-image.webp" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/assets/css/style.css" />
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a class="nav-logo" href="/">alassane<span>.ai</span></a>
+    <div class="nav-links">
+      <a href="/#work" class="active">Work</a>
+      <a href="/writing/">Writing</a>
+      <a href="/about/">About</a>
+      <a class="nav-cta" href="mailto:alassanedialdiop@gmail.com">contact()</a>
+    </div>
+  </div>
+</nav>
+
+<article class="article">
+  <div class="article-inner">
+    <a class="back-link" href="/#work">← back to work</a>
+    <p class="kicker">Case study · AI Engineer (Consultant) · 2021–2023</p>
+    <h1>Tastet — research-funded recsys, deployed in production</h1>
+    <p class="lede">A hybrid recommender system for Montréal's gourmet guide — from supervised research at HEC Montréal to a live, retraining production system on GCP.</p>
+    <div class="meta-row">
+      <span class="tag hl">Recommender Systems</span><span class="tag hl">Ranking</span><span class="tag">GCP</span><span class="tag">Docker</span><span class="tag">Fairness</span><span class="tag">Mitacs $15K+</span>
+    </div>
+    <img class="article-hero" src="/assets/img/tastet-project-image.webp" alt="Tastet recommender system" />
+
+    <h2>The challenge</h2>
+    <p>Tastet is a culinary guide built on equity and diversity — so a recommender that simply maximized clicks would have betrayed the product. Popular restaurants would dominate; small merchants would disappear. The system had to balance accuracy with <em>merchant equity</em>, and it had to run lean on a startup budget.</p>
+
+    <h2>Benchmarking with two scoreboards</h2>
+    <p>I benchmarked <strong>8 ranking models</strong> — KNN, ALS, SVD, RankFM, cosine similarity, item popularity, multivariate normal, and hybrids — against two metrics at once: F1-score for accuracy, and a <strong>custom fairness metric</strong> measuring how recommendation exposure distributed across merchants. The winning hybrid traded a little precision for a lot of equity — a deliberate, measured decision rather than a vibe.</p>
+
+    <h2>Production architecture</h2>
+    <pre>User/merchant registration event
+        ↓
+GCP Cloud Functions (event-driven triggers)
+        ↓
+Data collection → Google Cloud Storage
+        ↓
+Weekly cron-based retraining + refresh
+        ↓
+Docker container serving a real-time recommendation API</pre>
+    <p>Event-driven where the data changes, scheduled where the model needs refreshing, containerized where it serves. Boring in the best possible way — it kept running.</p>
+
+    <h2>Research to production, funded</h2>
+    <p>The project ran as supervised research at HEC Montréal with <strong>Prof. Laurent Charlin</strong>, secured multiple rounds of <strong>Mitacs funding ($15,000+)</strong>, and produced a thesis on state-of-the-art recommender systems and ethical AI. Most funded research ends as a PDF. This one ended as an API serving real users.</p>
+
+    <h2>The client's words</h2>
+    <blockquote>"What I value the most about working with Alassane is his exceptional reliability and professionalism. His methodical approach to problem-solving has consistently proven to be a perfect match for our company." — Elise Tastet, Founder &amp; CEO</blockquote>
+
+    <h2>What this demonstrates</h2>
+    <ul>
+      <li><strong>Rigorous model evaluation</strong> — multi-metric benchmarking with explicit trade-off decisions.</li>
+      <li><strong>Responsible AI in practice</strong> — fairness as an engineering constraint, not a slide.</li>
+      <li><strong>Research-to-production muscle</strong> — the rarest recsys skill: making it survive contact with reality.</li>
+    </ul>
+  </div>
+</article>
+
+<footer>
+  <div class="wrap">
+    <h2>Let's build something that ships.</h2>
+    <div class="foot-links" style="margin-top:24px">
+      <a class="btn btn-primary" href="mailto:alassanedialdiop@gmail.com">alassanedialdiop@gmail.com</a>
+      <a class="btn btn-ghost" href="https://www.linkedin.com/in/alassanediop/">LinkedIn</a>
+      <a class="btn btn-ghost" href="/assets/resume.pdf">Resume ↓</a>
+    </div>
+    <div class="foot-bottom"><span>© 2026 Alassane Diop</span><span>EN · FR · Wolof</span></div>
+  </div>
+</footer>
+
+<script src="/assets/js/main.js"></script>
+</body>
+</html>

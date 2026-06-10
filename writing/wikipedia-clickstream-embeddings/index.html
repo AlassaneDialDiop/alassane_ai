@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Turning Wikipedia clickstream into a taste space | Alassane Diop</title>
+  <meta name="description" content="How Olima builds a 64-dimensional similarity space from Wikipedia clickstream behavior, and navigates it with deterministic geometry instead of LLM calls." />
+  <link rel="canonical" href="https://alassane.ai/writing/wikipedia-clickstream-embeddings/" />
+  <meta property="og:title" content="Turning Wikipedia clickstream into a taste space" />
+  <meta property="og:image" content="https://alassane.ai/assets/img/olima-hero.webp" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/assets/css/style.css" />
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a class="nav-logo" href="/">alassane<span>.ai</span></a>
+    <div class="nav-links">
+      <a href="/#work">Work</a>
+      <a href="/writing/" class="active">Writing</a>
+      <a href="/about/">About</a>
+      <a class="nav-cta" href="mailto:alassanedialdiop@gmail.com">contact()</a>
+    </div>
+  </div>
+</nav>
+
+<article class="article">
+  <div class="article-inner">
+    <a class="back-link" href="/writing/">← all writing</a>
+    <p class="kicker">2026 · Embeddings · Recsys <span class="draft-badge">DRAFT</span></p>
+    <h1>Turning Wikipedia clickstream into a taste space</h1>
+    <p class="lede">Olima looks like a game about picking celebrities. Under the hood, it's a recommender system navigating a 64-dimensional embedding space built from how millions of people actually browse.</p>
+
+    <h2>Behavior beats taxonomy</h2>
+    <p>If you want to know which famous people are "similar," you have two options. Build it from a knowledge graph — occupations, nationalities, awards — or build it from <strong>behavior</strong>: the Wikipedia clickstream dataset, which records how readers actually navigate from one article to another.</p>
+    <p>I chose behavior, and the difference shows immediately. A knowledge graph thinks Messi's nearest neighbors are "other Argentine forwards." The clickstream knows what humans know: Messi's #1 neighbor is Cristiano Ronaldo, at 0.9967 similarity in our space. Nobody curated that. Millions of people clicking from one page to the other encoded it for us.</p>
+    <p>From the co-occurrence structure of those navigation paths, I compute <strong>spectral embeddings</strong> — 64 dimensions per entity. Every person becomes a point; closeness means people <em>behave</em> as if these two belong together.</p>
+
+    <h2>Entities need stable names</h2>
+    <p>One unglamorous decision that paid for itself: entities are keyed by <strong>Wikidata QIDs</strong>, not internal IDs. Barack Obama is Q76 whether the embeddings are v3 or v7. Analytics survive model upgrades; user profiles can be re-projected into new spaces; nothing breaks when the geometry improves.</p>
+
+    <h2>The game is a candidate selector</h2>
+    <p>Each round shows five rows of people and asks who you'd sit next to. Each row is a <em>geometric move</em> relative to your current profile vector:</p>
+    <table>
+      <tr><th>Row</th><th>Geometric definition</th><th>Purpose</th></tr>
+      <tr><td>Similar</td><td>Closest to current profile</td><td>Continue the current direction</td></tr>
+      <tr><td>Different</td><td>Opposite direction from Similar</td><td>Explore the opposite region</td></tr>
+      <tr><td>Diverse A &amp; B</td><td>Maximize tetrahedron volume with the first two</td><td>Spread — avoid collapsing into one cluster</td></tr>
+      <tr><td>Hub</td><td>Geometric center, popularity-weighted</td><td>Always one recognizable rescue anchor</td></tr>
+    </table>
+    <p>Whoever you tap in a row, you've chosen that row's <em>direction</em> — the celebrity is just the friendly face on a vector. Your profile then evolves by exponential moving average:</p>
+    <pre>profile = 0.7 * profile + 0.3 * selection</pre>
+    <p>History outweighs any single pick (70/30), so the profile converges smoothly instead of whiplashing — the same intuition as learning-rate tuning, applied to identity.</p>
+
+    <h2>Deterministic where possible, generative where valuable</h2>
+    <p>The selection engine is pure pre-computed geometry — no LLM in the loop. A full session costs about <strong>$0.002</strong>, which is the entire reason an unlimited free tier is viable. The LLMs enter only where they create magic: a mascot agent (GPT-5) that reads your trajectory through the space and narrates what your taste says about you, and an asset pipeline (Gemini) for visuals.</p>
+    <p>This split — deterministic engine, generative narrator — is, I think, the most underrated pattern in consumer AI right now. The geometry does the understanding. The LLM does the telling. Each is doing the only job it's actually best at, and the unit economics work because of it.</p>
+
+    <h2>Takeaways</h2>
+    <ul>
+      <li><strong>Behavioral co-occurrence is a free, massive signal.</strong> Clickstreams encode human similarity judgments at a scale no curation can match.</li>
+      <li><strong>Stable entity IDs are an architecture decision,</strong> not a detail. QIDs decoupled the product from any particular embedding version.</li>
+      <li><strong>Don't pay an LLM to do linear algebra.</strong> If the operation is geometric, pre-compute it; spend tokens on language.</li>
+    </ul>
+    <p>Olima is live at <a href="https://olima.ai">olima.ai</a>. Full case study <a href="/work/olima/">here</a>.</p>
+  </div>
+</article>
+
+<footer>
+  <div class="wrap">
+    <h2>Let's build something that ships.</h2>
+    <div class="foot-links" style="margin-top:24px">
+      <a class="btn btn-primary" href="mailto:alassanedialdiop@gmail.com">alassanedialdiop@gmail.com</a>
+      <a class="btn btn-ghost" href="https://www.linkedin.com/in/alassanediop/">LinkedIn</a>
+      <a class="btn btn-ghost" href="/assets/resume.pdf">Resume ↓</a>
+    </div>
+    <div class="foot-bottom"><span>© 2026 Alassane Diop</span><span>EN · FR · Wolof</span></div>
+  </div>
+</footer>
+
+<script src="/assets/js/main.js"></script>
+</body>
+</html>
