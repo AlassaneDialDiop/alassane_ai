@@ -12,14 +12,14 @@ Why: GitHub Pages serves static files directly; a build step was solving a probl
 ```
 index.html                  Home: hero, proof strip, work, testimonial, writing, contact
 about/index.html            Story, timeline, education, toolbox
-work/{vibecope,olima,tastet,browns}/index.html    Case studies
+work/{vibecope,olima,tastet,retail}/index.html    Case studies
 writing/index.html          Post list
 writing/<slug>/index.html   Posts (drafts marked with DRAFT badge — remove the
                             <span class="draft-badge"> when published)
 assets/css/style.css        The entire design system (CSS variables at top)
 assets/js/main.js           Scroll-reveal only
 assets/img/                 Images
-assets/resume.pdf           Downloadable resume (NOTE: contains phone number)
+assets/resume.pdf           Downloadable resume (phone-free version)
 CNAME                       alassane.ai custom domain
 ```
 
