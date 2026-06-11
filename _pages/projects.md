@@ -19,7 +19,7 @@ permalink: /projects/
       </div>
 
       <div class="project-item">
-        <h2><a href="{{ '/projects/product-recommendation-engine/' | relative_url }}">2. Product Recommendation Engine — Browns Shoes</a></h2>
+        <h2><a href="{{ '/projects/product-recommendation-engine/' | relative_url }}">2. Product Recommendation Engine — E-commerce</a></h2>
         <p>— Engineered a recommendation engine leveraging order history patterns to personalize product grids in customer communications.</p>
         <img src="/assets/product-recommendation-engine-image.png" alt="Product Recommendation Engine" class="project-thumbnail">
       </div>
